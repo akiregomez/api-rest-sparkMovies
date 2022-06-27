@@ -1,0 +1,343 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --color1: white;
+    --color2: green;
+    --color3: rgb(165, 216, 27);
+    --color4: rgb(144, 171, 230);
+    --color5: blue;
+    --color6: rgb(35, 245, 115);
+    --color7: rgb(97, 97, 236);
+    --color8: rgb(255, 0, 242);
+    --color9: rgb(99, 99, 9);
+    --color10: beige;
+    --color11: rgb(150, 146, 146);
+    --color12: rgb(150, 32, 32);
+    --color13: rgb(194, 191, 29);
+    --color14: rgb(170, 118, 41);
+    --color15: rgb(31, 98, 153);
+    --color16: rgb(123, 21, 136);
+    --color17: rgb(15, 219, 226);
+    --color18: rgb(194, 106, 117);
+    --color19: rgb(13, 231, 158);
+
+    /* font-size */
+    --lg: 2rem;
+    --md: 1.8rem;
+    --sm:1.6rem;
+    --xsm:1.2rem;
+}
+
+html{
+    font-size: 62.5%;
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+
+span{
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+li{
+    list-style: none;    
+}
+
+li a{
+    text-decoration: none;
+}
+
+h1{
+    font-size: var(--lg);
+    font-weight: 500;
+}
+
+h2{
+    font-size: var(--md);
+}
+
+h3{
+    font-size: var(--xsm);
+}
+
+main{
+    padding: 0px 10px;
+}
+
+button{
+    border-style: none;
+}
+
+.header-container--long {
+    background-size: cover !important;
+    height: 480px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+header .header-navbar{
+    display: flex;
+    align-items: center;
+    background-color: rgb(174, 9, 9);
+}
+
+header .navbar-logo-SparkMovies{
+    width: 170px;
+    height: 50px;
+    background-image: url('./img/logo.PNG');
+    margin-left: 5px;
+}
+header .navbar-right{
+    display: flex;
+    position: absolute;
+    right: 0;
+}
+header .navbar-right li{
+    margin: 0px 10px;
+}
+header .navbar-right li a{
+    font-size: var(--sm);
+    color: white;
+    font-weight: 300;
+}
+header .arrow-header-btn{
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+    font-weight: 700;
+    background-color: white;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    margin:20px 0px 0px 10px
+}
+
+header .header-title{
+    margin: 20px 10px;
+    color: white;
+}
+
+header .header-form-container{
+    display: flex;
+    margin: 20px 10px 40px 10px;
+    min-width: 200px;
+    max-width: 500px;
+}
+header .header-form-container #search-form-input{
+    width: 80%;
+    height: 30px;
+    padding-left: 10px;
+    border-radius: 10px 0px 0px 10px;
+    border-style: none;
+    outline: none;
+}
+
+header .header-form-container #search-form-input::placeholder{
+    color:  rgb(121, 121, 121);
+    font-size: var(--sm);
+    font-weight: 500;
+}
+
+header #search-form-button{
+    width: 20%;
+    height: 30px;
+    border-radius: 0px 10px 10px 0px;
+    border-style: none;
+    background-color: rgb(185 185 185);
+}
+
+/*main*/
+main #section-trending-container .trendingPreview-header{
+    display: flex;
+    flex-direction: row;
+}
+
+main .trendingPreview-header .trendingPreview-btn{
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    font-size: var(--sm);
+    font-weight: 700;
+    position: absolute;
+    right: 10px;
+}
+
+main .trending-preview-scroll{
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+main .trending-preview-scroll::-webkit-scrollbar{
+    display: none;
+}
+
+.movie-container{
+    width: 250px;
+    height: 350px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.movie-img{
+    width: 220px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.movie-img:hover{
+    transform: scale(1.1);
+    box-shadow: blue 8px 8px 8px;
+}
+.category-title {
+    margin-bottom: 8px;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+.category-title::before{
+    content: '***';
+    color: transparent;
+    background-color: var(--idcolor);
+    border-radius: 8px;
+    margin-right: 8px;
+    width: 8px;
+    height: 8px;
+}
+
+#id28 {--idcolor: var(--color1);}
+#id12 {--idcolor: var(--color2);}
+#id16 {--idcolor: var(--color3);}
+#id35 {--idcolor: var(--color4);}
+#id80 {--idcolor: var(--color5);}
+#id99 {--idcolor: var(--color6);}
+#id18 {--idcolor: var(--color7);}
+#id10751 {--idcolor: var(--color8);}
+#id14 {--idcolor: var(--color9);}
+#id36 {--idcolor: var(--color10);}
+#id27 {--idcolor: var(--color11);}
+#id10402 {--idcolor: var(--color12);}
+#id9648 {--idcolor: var(--color13);}
+#id10749 {--idcolor: var(--color14);}
+#id878 {--idcolor: var(--color15);}
+#id10770 {--idcolor: var(--color16);}
+#id53 {--idcolor: var(--color17);}
+#id10752 {--idcolor: var(--color18);}
+#id37 {--idcolor: var(--color19);}
+
+main .categories-preview-scroll{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px auto; 
+    max-width: 1000px;
+    padding: 10px;
+}
+main .categories-preview-scroll h3{
+    margin: 10px 0px;
+}
+
+main .genericList-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+main #section-movieDetail-container {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    padding: 32px 24px;
+    margin-top: 403px;
+    z-index: 1;
+    position: absolute;
+    background-color: black;
+}
+
+main #section-movieDetail-container  .movieDetail-score::before{
+    content: '★';
+    color: yellow;
+}
+
+main #section-movieDetail-container  .movieDetail-score{
+    font-size: var(--sm);
+}
+main #section-movieDetail-container  .movieDetail-description{
+    font-size: var(--sm);
+    margin: 20px 0px 30px 0px;
+    text-align: justify;
+}
+
+main  .relatedMovies-container{
+    margin: 30px 0px;
+
+}
+
+main .relatedMovies-container .relatedMovies-scrollContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(174, 9, 9);
+    display: grid;
+    grid-template-columns: 70px 70px;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;    
+}
+
+footer a{
+    background-color: white;
+    border-style: double;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: grid;  
+}
+footer .icon-gitHub{
+    border-radius: 100%;
+    background-image: url('./img/github.png');
+}
+
+footer .icon-linkdin{
+    border-radius: 100%;
+    background-image: url('./img/linkedin.png');
+}
+
+.icon-gitHub:hover, .icon-linkdin:hover, .trendingPreview-btn:hover{
+    cursor: pointer;
+}
+/* Navigation */
+.inactive{
+    display: none;
+  }
+
+
+@media(max-width: 320px){
+    header .header-navbar .navbar-right{
+        display: none;
+    }
+
+    header, body{
+        min-width: 320px;
+    }
+}
